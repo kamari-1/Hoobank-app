@@ -15,7 +15,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${
+            className={`font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-secondary ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
           >
@@ -31,7 +31,7 @@ const Navbar = () => {
           className="w-[28px] h-[28px] object-contain tra"
           onClick={toggleMenu}
         />
-        {console.log(toggle)}
+        {/* {console.log(toggle)} */}
 
         {toggle && (
           <div className={`absolute top-16 left-0 right-0 z-10 w-full`}>
