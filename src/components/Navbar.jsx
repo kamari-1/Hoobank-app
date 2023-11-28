@@ -28,16 +28,16 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain tra"
+          className="w-[28px] h-[28px] object-contain"
           onClick={toggleMenu}
         />
         {/* {console.log(toggle)} */}
 
         {toggle && (
-          <div className={`absolute top-16 left-0 right-0 z-10 w-full`}>
+          <div className={`absolute top-16 left-0 right-0 z-10 w-full sidebar`}>
             {/* Todo: Add transition to menu open and close */}
             <ul
-              className={`flex flex-wrap flex-col justify-center items-center w-[95%] mx-auto bg-black-gradient-2 rounded-[16px]`}
+              className={`list-none flex flex-wrap flex-col justify-center items-center w-[95%] mx-auto bg-black-gradient rounded-[16px]`}
             >
               {navLinks.map((nav) => (
                 <li
